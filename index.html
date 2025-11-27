@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio showcasing projects, skills, and experience.">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/Brayo Logo.png" alt="Logo" class="logo-icon" width="32" height="32">
+                <span class="logo-text">Brian Nyakundi</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                 <li><a href="#Certifications" class="nav-link">Certification</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button class="btn-cv">Download CV</button></li>
+                <li><button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Welcome to My <span class="gradient-text">Portfolio</span></h1>
+            <p class="hero-subtitle">I don't just monitor networks; I analyze them. Leveraging a strong foundation in Network Defense and Data Analytics, I turn complex data into actionable security strategies that protect infrastructure and mitigate risks.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                    View My Work <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    Get in Touch
+                </button>
+            </div>
+        </div>
+
+         <div class="hero-image">
+            <img src="images/Profile Pictures.jpg" alt="Brian Nyakundi" class="circular-image">
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a dedicated Computer Technologist and aspiring Cybersecurity Analyst with a strong foundation in network security, system administration, and data protection. My background combines technical expertise in securing digital infrastructures with practical experience in configuring network devices and managing both Windows and Linux environments.</p>
+                    <p>Skilled in network defense and troubleshooting, I have hands-on experience with tools like Cisco Packet Tracer and a solid grasp of system configurations and maintenance. My knowledge extends beyond infrastructure into data analytics, where I use statistical tools such as SPSS and STATA to identify patterns, analyze threats, and support informed security decisions.</p>
+                    <p>I’m passionate about leveraging my skills in cybersecurity, hardware support, and risk mitigation to help organizations safeguard their digital assets and maintain robust, resilient IT environments.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Clean Code</h3>
+                        <p>Writing maintainable, scalable code that follows best practices and industry standards.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Great Design</h3>
+                        <p>Creating beautiful, intuitive interfaces that users love to interact with.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Performance</h3>
+                        <p>Building fast, responsive applications that deliver excellent user experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects-bg.jpg" alt="E-Commerce Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p class="project-description">A full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-link btn-link-outline" onclick="window.location.href='Demo link would go here'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Portfolio.png" alt="Task Management App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio</h3>
+                        <p class="project-description">Collaborative task management application with real-time updates, team collaboration features, and analytics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Framer Motion</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-link btn-link-outline" onclick="window.location.href='Demo link would go here'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Management Dashboard.png" alt="Task Management App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Management System</h3>
+                        <p class="project-description">Windows desktop application using C# and .NET Framework to efficiently manage car dealership operations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">.NET</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-link btn-link-outline" onclick="window.location.href='https://github.com/Btiar-user/Management-system'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects-bg.jpg" alt="AI Content Generator">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Content Generator</h3>
+                        <p class="project-description">Intelligent content generation tool powered by AI, helping creators produce high-quality content efficiently.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Vercel</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-link btn-link-outline" onclick="window.location.href='Demo link would go here'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects-bg.jpg" alt="Data Visualization Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p class="project-description">Interactive dashboard for visualizing complex datasets with real-time updates and custom analytics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-link btn-link-outline" onclick="window.location.href='Demo link would go here'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects-bg.jpg" alt="Mobile Fitness Tracker">
+                    </div>
+                    <div class="project-content">
+                        <h3>Mobile Fitness Tracker</h3>
+                        <p class="project-description">Cross-platform fitness tracking application with workout logging, progress analytics, and social features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">Expo</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-link btn-link-outline" onclick="window.location.href='Demo link would go here'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects-bg.jpg" alt="Design System Library">
+                    </div>
+                    <div class="project-content">
+                        <h3>Design System Library</h3>
+                        <p class="project-description">Comprehensive component library and design system for building consistent, accessible user interfaces.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Storybook</span>
+                            <span class="tech-tag">npm</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-link btn-link-outline" onclick="window.location.href='Demo link would go here'">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section id="Certifications" class="Certifications">
+        <div class="container">
+            <h2 class="section-title">Certification</h2>
+             <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                                <img src="images/SPSS.png" alt="Data Analytics Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Data Analytics</h3>
+                            <p>Certifies completion of training in SPSS and STATA for statistical analysis.</p>
+                            <div class="project-tags">
+                                <span>2024</span>
+                            </div>
+                             <button class="btn-link btn-link-outline" onclick="window.location.href='images/KESSAP_01.jpg'">View</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="project-card">
+                        <div class="project-image">
+                                <img src="images/Excel.webp" alt="Data Analytics Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Data Analytics</h3>
+                            <p>Teaches the data analysis process, tools like Excel and SQL, and how to transform and interpret data.</p>
+                            <div class="project-tags">
+                                <span>2024</span>
+                            </div>
+                             <button class="btn-link btn-link-outline" onclick="window.location.href='images/Data Analytics Essentials.pdf'">View</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                                <img src="images/Introduction to cybersecurity.jpeg" alt="Data Analytics Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Introduction to Cybersecurity</h3>
+                            <p>Introduces online safety, cyber threats, attack prevention, and career paths in cybersecurity.</p>
+                            <div class="project-tags">
+                                <span>2024</span>
+                        </div>
+                            <button class="btn-link btn-link-outline" onclick="window.location.href='images/Introduction to Cybersecurity.pdf'">View</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                                <img src="images/Cybersecurity for Beginners.jpg" alt="Data Analytics Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Cybersecurity for Beginners</h3>
+                            <p>Provides foundational knowledge in cybersecurity principles and practices for beginners.</p>
+                            <div class="project-tags">
+                                <span>2024</span>
+                            </div>
+                             <button class="btn-link btn-link-outline" onclick="window.location.href='images/Mindluster_Certificate.pdf'">View</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                                <img src="images/operating-systems.png" alt="Data Analytics Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Operating Systems</h3>
+                            <p>Includes administration of Windows and Linux systems and mobile OS configuration.</p>
+                            <div class="project-tags">
+                                <span>2024</span>
+                            </div>
+                            <button class="btn-link btn-link-outline" onclick="window.location.href='images/OperatingSystemsBasics.pdf'">View</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                                <img src="images/Networking Basics.avif" alt="Data Analytics Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Networking</h3>
+                            <p>Explains network types, IP addressing, routing, and troubleshooting connectivity.</p>
+                            <div class="project-tags">
+                                <span>2025</span>
+                            </div>
+                            <button class="btn-link btn-link-outline" onclick="window.location.href='images/NetworkingBasics.pdf'">View</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                                <img src="images/Computer Hardware.jpeg" alt="Data Analytics Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Computer Hardware</h3>
+                            <p>Covers building, repairing, and maintaining PCs, laptops, and mobile devices, along with safety standards.</p>
+                            <div class="project-tags">
+                                <span>2025</span>
+                            </div>
+                             <button class="btn-link btn-link-outline" onclick="window.location.href='images/ComputerHardware.pdf'"> view</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                                <img src="images/Network-configuration.png" alt="Data Analytics Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Networking Devices and Basic Config</h3>
+                            <p>Covers configuration and operation of network devices (minimal detail in file).</p>
+                            <div class="project-tags">
+                                <span>2025</span>
+                            </div>
+                             <button class="btn-link btn-link-outline" onclick="window.location.href='images/NetworkingDevicesandBasicConfig.pdf'">View</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                                <img src="images/Network Defense.png" alt="Data Analytics Project">
+                        </div>
+                        <div class="project-content">
+                            <h3>Network Defense</h3>
+                            <p>Provides foundational knowledge in cybersecurity principles and practices for beginners.</p>
+                            <div class="project-tags">
+                                <span>2025</span>
+                            </div>
+                             <button class="btn-link btn-link-outline" onclick="window.location.href='images/Network_Defense_certificate.pdf'">View</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">HTML/CSS</div>
+                        <div class="skill-item">TypeScript</div>
+                        <div class="skill-item">Tailwind CSS</div>
+                        <div class="skill-item">Next.js</div>
+                        <div class="skill-item">Vue.js</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">PHP</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item"></div>
+                        <div class="skill-item"></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">SPSS/STATA</div>
+                        <div class="skill-item">Microsoft Office Suite</div>
+                        <div class="skill-item">WireShark</div>
+                        <div class="skill-item">Packer Tracer</div>
+                        <div class="skill-item">Antivirus/Malware Removal</div>
+                        <div class="skill-item">Figma</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Design</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">UI/UX Design</div>
+                        <div class="skill-item">Responsive Design</div>
+                        <div class="skill-item">Accessibility</div>
+                        <div class="skill-item">Design Systems</div>
+                        <div class="skill-item">Prototyping</div>
+                        <div class="skill-item">Figma</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Timeline -->
+            <div class="experience-section">
+                <h3 class="experience-title">Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Senior Full-Stack Developer</h4>
+                            <p class="company">The Prism Group</p>
+                            <p class="period">2024 - Present</p>
+                            <p class="description">Leading development of scalable web applications and mentoring junior developers.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Desigener</h4>
+                            <p class="company">Frelancer</p>
+                            <p class="period">2023 - 2024</p>
+                            <p class="description">Creative design, Logos, Posters and Office suite documents.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Frontend Developer</h4>
+                            <p class="company">StarightFlush Group</p>
+                            <p class="period">2024</p>
+                            <p class="description">Developed responsive web interfaces and improved user experience across projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hello, feel free to reach out!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:nyakundibrian168@gmail.com" class="contact-value">nyakundibrian168@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <a href="tel:+254743131826" class="contact-value">+254743131826</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Location</p>
+                                <p class="contact-value">Murang'a, Kenya</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <p class="social-title">Follow Me</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Btiar-user" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="http://www.linkedin.com/in/brian-nyakundi-bn295" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@nyakundi9?_r=1&_t=ZM-91kH0Nbdyp9" target="_blank" rel="noopener noreferrer" class="social-icon" title="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="mailto:nyakundibrian168@gmail.com" class="social-icon" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/Brayo Logo.png" alt="Logo" class="logo-icon" width="32" height="32">
+                        <span class="logo-text">Brian Nyakundi</span>
+                    </div>
+                    <p>Creating beautiful digital experiences with code, creativity and secure.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#Certifications">Certifications</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Me</h3>
+                    <div class="footer-social">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="http://www.linkedin.com/in/brian-nyakundi-bn295" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@nyakundi9?_r=1&_t=ZM-91kH0Nbdyp9" target="_blank" rel="noopener noreferrer" class="social-icon" title="TikTok">
+                           <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="mailto:nyakundibrian168@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span>Brian Nyakundi's Portfolio. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
