@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function downloadCV() {
     // Replace with the actual path to your CV file
     const cvPath = 'https://briannyakundi.github.io/Brian/images/Brian Nyakundi CV.pdf';
-    const fileName = 'Brian Nyakundi CV.pdf'; // Name you want for downloaded file
+    const fileName = 'Brian_Nyakundi_CV.pdf'; // Name you want for downloaded file
     
     // Create a temporary link to trigger download
     const link = document.createElement('a');
